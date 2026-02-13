@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.json())
 app.use(cors({
   origin: (origin, callback) => {
-    const ACCEPTED_ORIGIN = ['http://localhost:1234', 'http://localhost:8081', 'https://movies.com']
+    const ACCEPTED_ORIGIN = ['http://localhost:1234', 'http://localhost:8080', 'https://movies.com']
 
     if (ACCEPTED_ORIGIN.includes(origin) || !origin) {
       return callback(null, true)
